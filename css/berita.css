@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  color: rgb(233, 248, 249);
+  background-color: rgb(83, 127, 231);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  width: 200px;
+  padding: 10px;
+}
+
+.navbar ul {
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: flex;
+  transition: 300ms;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(233, 248, 249);
+}
+
+/* content */
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  padding: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 400%;
+}
+
+.content img {
+  width: 80%;
+}
+
+.content p {
+  max-width: 80%;
+  padding: 10px;
+  font-size: 120%;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/* comment */
+.comment {
+  padding: 20px 10%;
+  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comment p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment textarea {
+  width: 100%;
+}
+
+.comment button {
+  width: 20%;
+}
+
+/* footer */
+.footer {
+  height: 300px;
+  padding: 20px;
+  color: rgb(233, 248, 249);
+  background-color: rgb(83, 127, 231);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer img {
+  width: 15%;
+}
+
+.penutup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kanan {
+  width: 50%;
+  font-size: medium;
+}
+
+.kanan h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.kiri {
+  width: 25%;
+}
+
+.kiri ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.kiri a {
+  font-weight: bold;
+  color: rgba(233, 248, 249);
+  text-decoration: none;
+}
+
+.kiri h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.bawah {
+  border-top: 2px solid rgba(233, 248, 249);
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* hover */
+.navbar:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+.navbar ul a:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 5px rgba(233, 248, 249));
+}
+
+.navbar ul:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+.banner:hover {
+  flex: 5;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 5px rgba(233, 248, 249));
+}
+
+.container:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+.kiri ul li a:hover {
+  color: rgba(24, 24, 35);
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content h1 {
+    font-size: 300%;
+  }
+}
